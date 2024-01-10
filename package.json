@@ -1,0 +1,22 @@
+{
+  "name": "figma-vite-preact-starter-file",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && npm run build:main",
+    "build:main": "esbuild lib/code.ts --bundle --outfile=dist/code.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.19.3"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.83.0",
+    "@preact/preset-vite": "^2.7.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-singlefile": "^0.13.5"
+  }
+}
